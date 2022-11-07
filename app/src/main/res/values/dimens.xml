@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_width_hdpi">60dp</dimen>
+    <dimen name="btn_height_hdpi">60dp</dimen>
+    <dimen name="btn_text_size_hdpi">20dp</dimen>
+    <dimen name="big_btn_text_size_hdpi">25dp</dimen>
+    <dimen name="big_btn_width_hdpi">135dp</dimen>
+    <dimen name="big_btn_height_hdpi">60dp</dimen>
+
+
+
+
+
+    <dimen name="btn_width_large">72dp</dimen>
+    <dimen name="btn_height_large">72dp</dimen>
+    <dimen name="btn_text_size_large">32dp</dimen>
+    <dimen name="big_btn_text_size_large">35dp</dimen>
+    <dimen name="big_btn_width_large">161dp</dimen>
+    <dimen name="big_btn_height_large">72dp</dimen>
+</resources>
