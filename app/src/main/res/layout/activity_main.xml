@@ -40,7 +40,6 @@
                 android:text="0"
                 android:textSize="50dp" />
         </LinearLayout>
-
     </RelativeLayout>
 
     <RelativeLayout
@@ -59,21 +58,20 @@
 
             <RelativeLayout
                 android:id="@+id/conteneur_41"
-                android:layout_marginEnd="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/boutonResetScreen"
                     style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                     android:layout_width="@dimen/btn_width_large"
                     android:layout_height="@dimen/btn_height_large"
-                    android:textSize="@dimen/btn_text_size_large"
                     android:backgroundTint="@color/gris"
                     android:text="C"
                     android:textColor="@color/black"
+                    android:textSize="@dimen/btn_text_size_large"
                     app:cornerRadius="36dp" />
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -231,7 +229,6 @@
                 android:layout_marginEnd="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-
                 <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                     android:onClick="buttonFour"
@@ -359,11 +356,11 @@
                     style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                     android:layout_width="@dimen/btn_width_large"
                     android:layout_height="@dimen/btn_height_large"
-                    android:textSize="@dimen/btn_text_size_large"
                     android:backgroundTint="@color/noir"
                     android:onClick="buttonThree"
                     android:text="3"
                     android:textColor="@color/white"
+                    android:textSize="@dimen/btn_text_size_large"
                     app:cornerRadius="536dp" />
             </RelativeLayout>
 
@@ -405,15 +402,13 @@
                     android:id="@+id/extended_fab"
                     android:layout_width="@dimen/big_btn_width_large"
                     android:layout_height="@dimen/big_btn_height_large"
-                    android:textSize="@dimen/big_btn_text_size_large"
                     android:layout_centerInParent="true"
                     android:backgroundTint="@color/noir"
                     android:onClick="buttonZero"
                     android:paddingStart="20dp"
                     android:text="0"
                     android:textColor="@color/white"
-                     />
-
+                    android:textSize="@dimen/big_btn_text_size_large" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -425,13 +420,13 @@
 
                 <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                    android:onClick="buttonPoint"
                     android:layout_width="@dimen/btn_width_large"
                     android:layout_height="@dimen/btn_height_large"
-                    android:textSize="@dimen/btn_text_size_large"
                     android:backgroundTint="@color/noir"
+                    android:onClick="buttonPoint"
                     android:text="."
                     android:textColor="@color/white"
+                    android:textSize="@dimen/btn_text_size_large"
                     app:cornerRadius="536dp" />
             </RelativeLayout>
 

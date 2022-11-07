@@ -7,10 +7,6 @@
     <dimen name="big_btn_width_hdpi">135dp</dimen>
     <dimen name="big_btn_height_hdpi">60dp</dimen>
 
-
-
-
-
     <dimen name="btn_width_large">72dp</dimen>
     <dimen name="btn_height_large">72dp</dimen>
     <dimen name="btn_text_size_large">32dp</dimen>

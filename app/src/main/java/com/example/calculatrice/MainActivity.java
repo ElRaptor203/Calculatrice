@@ -20,21 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView ecran_1, ecran_2;
     private MaterialButton btnResetScreen;
-    private static char CURRENT_OPERATOR ;
-    private static String OPERANDE_1 ;
-    private static String OPERANDE_2 ;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ecran_1 = findViewById(R.id.ecran_1);
         ecran_2 = findViewById(R.id.ecran_2);
         btnResetScreen = findViewById(R.id.boutonResetScreen);
-
         btnResetScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,13 +45,11 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 String finalResult = getResult(ecran_1.getText().toString());
-
                 if(!finalResult.equals("Err")){
                     ecran_2.setText(finalResult);
                 }
             }
         });
-
         btnResetScreen.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -71,22 +62,21 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void buttonZero(View view) {
+
+    public void buttonZero(View view) {initScreen();
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("0"));
-
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
-
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonOne(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("1"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
-
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
@@ -94,83 +84,95 @@ public class MainActivity extends AppCompatActivity {
 
     public void buttonTwo(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("2"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
-
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonThree(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("3"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonFour(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("4"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonFive(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("5"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonSix(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("6"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonSeven(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("7"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonHeigth(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("8"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonNine(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("9"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
+
+    public void buttonPoint(View view) {
+        initScreen();
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
+        String finalResult = getResult(ecran_1.getText().toString());
+
+        if(!finalResult.equals("Err")){
+            ecran_2.setText(finalResult);
+        }
+    }
+
 
     public void buttonPlusOrMinus(View view) {
         int taille = ecran_1.getText().toString().length();
@@ -191,31 +193,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
+
+
+
+
+
+
     public void buttonMinus(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("-"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonModulo(View view) {
     }
-
     public void buttonDivided(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("/"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonMultiplier(View view) {
         initScreen();
+        MaterialButton button =(MaterialButton) view;
         ecran_1.setText(ecran_1.getText().toString().concat("*"));
         String finalResult = getResult(ecran_1.getText().toString());
 
@@ -223,10 +233,10 @@ public class MainActivity extends AppCompatActivity {
             ecran_2.setText(finalResult);
         }
     }
-
     public void buttonAdd(View view) {
         initScreen();
-        ecran_1.setText(ecran_1.getText().toString().concat("+"));
+        MaterialButton button =(MaterialButton) view;
+        ecran_1.setText(ecran_1.getText().toString().concat(button.getText().toString()));
         String finalResult = getResult(ecran_1.getText().toString());
 
         if(!finalResult.equals("Err")){
@@ -249,9 +259,7 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     }
-
-
-    String getResult(String data){
+    public String getResult(String data){
         ecran_2.setTextColor(Color.GREEN);
         Log.i("MainActivity_43f","data : "+data);
         try{
@@ -264,18 +272,10 @@ public class MainActivity extends AppCompatActivity {
             }
             Log.i("MainActivity_43dsef","finalResult : "+finalResult);
             return finalResult;
-
         }catch (Exception e){
             return "Err";
         }
     }
 
-    public void buttonPoint(View view) {
-        ecran_1.setText(ecran_1.getText().toString().concat("."));
-        String finalResult = getResult(ecran_1.getText().toString());
 
-        if(!finalResult.equals("Err")){
-            ecran_2.setText(finalResult);
-        }
-    }
 }
